@@ -18,7 +18,8 @@ select.addEventListener("change", async (event) => {
   const data = await resp.json();
 
   const html = data
-    .map((item) => `<li>${item.id ? item.name : item.title}</li>`)
+
+    .map((item) => `<li>${item.pokemonID ? item.id : item.name}</li>`)
     .join("");
 
   output.innerHTML = `<ul>${html}</ul>`;
