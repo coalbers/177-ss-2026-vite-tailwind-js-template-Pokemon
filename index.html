@@ -10,11 +10,31 @@
     <title>vite-tailwind-js-template</title>
   </head>
   <body>
-    <main class="flex flex-col min-h-screen items-center justify-center">
-    <h1 class="text-8xl font-black text-center animate-bounce text-red-600">
-      Hello world!
-    </h1>
-  </main>
+    <main class="mx-auto max-w-lg p-6 space-y-6">
+
+  <div class="space-y-2">
+    <label class="block text-sm font-medium" for="sw-select">
+      Choose a category
+    </label>
+    <select
+      id="sw-select"
+      class="w-full rounded border px-3 py-2 bg-white text-gray-900"
+    >
+      <option value="">-- Pick one --</option>
+      <option value="1">Bulbasaur</option>
+      <option value="4">Charmander</option>
+      <option value="7">Squirtle</option>
+    </select>
+  </div>
+
+  <output
+  id="output"
+  class="block min-h-[3rem] rounded border border-dashed border-gray-300 p-4 text-sm text-gray-500"
+>
+  Select a category above to load results.
+</output>
+
+</main>
     
     <script type="module" src="/src/main.js"></script>
   </body>
